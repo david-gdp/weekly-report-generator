@@ -31,6 +31,31 @@ Or, if you have a script entry point:
 python accomplishment_tool.py <command> [options]
 ```
 
+### Config File
+
+The config file (`config.yaml` by default) should be placed in the same directory as this README.
+
+Example template:
+```yaml
+organizations:
+  - Organization Name 1
+  - Organization Name 2
+  # ...more organizations
+projects:
+  - Project A
+  - Project B
+  # ...more projects
+people:
+  - Name A
+  - Name B
+  # ...more people
+repo:
+  key: [github urls]
+```
+
+- The `organizations`, `projects`, and `people` sections list names to be anonymized or deanonymized.
+- The `repo` section can be used to specify related GitHub repositories.
+
 ### Commands
 
 #### 1. Anonymize (mask) a file
